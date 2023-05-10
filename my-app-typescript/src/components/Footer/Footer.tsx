@@ -1,5 +1,5 @@
 function Footer() {
-  return <div>component footer</div>;
+  return <div className="wrapper-component">component footer</div>;
 }
 
 export default Footer;
