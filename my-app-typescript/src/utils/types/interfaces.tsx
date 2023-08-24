@@ -10,3 +10,7 @@ export enum PageEnum {
   add,
   edit,
 }
+export interface TokenUser {
+  accessToken: string;
+  refreshToken: string;
+}

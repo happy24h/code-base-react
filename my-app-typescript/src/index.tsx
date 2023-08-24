@@ -7,6 +7,7 @@ import { store } from "./redux/store";
 import GlobalStyles from "./components/GlobalStyles";
 
 import reportWebVitals from "./reportWebVitals";
+import "./utils/translate/i18";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
