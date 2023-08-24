@@ -12,18 +12,20 @@ function Header() {
 
   return (
     <div className="wrapper-header">
-      <div className="wrapper-component">component header {t("language")}</div>
-      <div className="container-btn">
-        <button
-          className={i18n.language === "en" ? "btn" : undefined}
-          onClick={() => onChangeLanguage("en")}>
-          English
-        </button>
-        <button
-          className={i18n.language === "vi" ? "btn" : undefined}
-          onClick={() => onChangeLanguage("vi")}>
-          Tiếng Việt
-        </button>
+      <div className="wrapper-component">
+        component header {t("language")}
+        <div className="container-btn">
+          <button
+            className={i18n.language === "en" ? "btn" : undefined}
+            onClick={() => onChangeLanguage("en")}>
+            English
+          </button>
+          <button
+            className={i18n.language === "vi" ? "btn" : undefined}
+            onClick={() => onChangeLanguage("vi")}>
+            Tiếng Việt
+          </button>
+        </div>
       </div>
     </div>
   );
