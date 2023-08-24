@@ -3,3 +3,26 @@
     width: 100%;
     background-color: bisque;
 }
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.btn {
+    border:none;
+    padding: 3px 5px;
+    border-radius: 6px;
+    background-color: orange;
+    cursor: pointer;
+    color: white;
+}
+button {
+    cursor: pointer;
+    border: none;
+    min-width: 90px;
+    padding: 5px 5px;
+    border-radius: 6px;
+    box-shadow: 1px 1px #ccc;
+}
