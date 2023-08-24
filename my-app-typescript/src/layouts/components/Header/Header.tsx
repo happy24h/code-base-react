@@ -13,7 +13,7 @@ function Header() {
   return (
     <div className={css("wrapper")}>
       {" "}
-      <div className="container-btn">
+      <div className={css("container-btn")}>
         <button
           style={i18n.language === "en" ? { background: "orange" } : undefined}
           onClick={() => onChangeLanguage("en")}>
