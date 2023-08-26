@@ -2,12 +2,16 @@
     height: 50px;
     width: 100%;
     background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-btn {
     display: flex;
     justify-content: center;
     gap: 10px;
+    height: 26px;
 
 }
 .btn {
