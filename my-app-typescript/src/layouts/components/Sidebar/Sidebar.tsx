@@ -11,7 +11,7 @@ function Sidebar() {
       <nav className={cx("navWrapper")}>
         <MenuItem title="Home" to={"/"} icon={<HomeOutlined />} />
         <MenuItem title="Content" to={"/content"} icon={<HomeOutlined />} />
-        <MenuItem title="Home" to={"/login"} icon={<HomeOutlined />} />
+        <MenuItem title="Login" to={"/login"} icon={<HomeOutlined />} />
         <MenuItem
           title="Manage user"
           to={"/system-manage-user"}
