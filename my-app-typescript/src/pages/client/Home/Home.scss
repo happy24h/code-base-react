@@ -1,9 +1,14 @@
 .wrapper-home {
     width: 100wh;
-    height: 200px;
+    min-height: 100vh;
     background-color: bisque;
     text-align: center;
     border: 1px solid #ccc;
+
+    .box {
+        border: 1px solid #ccc;
+
+    }
 }
 
 

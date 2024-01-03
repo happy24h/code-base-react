@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+- `xxl`: Màn hình có độ rộng lớn hơn 1600px.
+- `xl`: Màn hình có độ rộng từ 1200px đến 1600px.
+- `lg`: Màn hình có độ rộng từ 1000px đến 1200px.
+- `md`: Màn hình có độ rộng từ 765px đến 1000px.
+- `sm`: Màn hình có độ rộng nhỏ hơn 765px.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dưới đây là tóm tắt danh sách các thẻ và components trong Ant Design sử dụng được các thuộc tính `xxl`, `xl`, `lg`, `md`, và `sm`:
 
-## Available Scripts
+1. **Grid System (`<Row>` và `<Col>`):**
 
-In the project directory, you can run:
+   - `<Col>`: Sử dụng `xxl`, `xl`, `lg`, `md`, và `sm` trong thuộc tính `span` để xác định số cột chiếm trên các loại màn hình khác nhau.
 
-### `npm start`
+2. **Layout (`<Layout>`):**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   - `<Header>`, `<Content>`, `<Footer>`, và `<Sider>`: Các components trong `<Layout>` có thể sử dụng `xxl`, `xl`, `lg`, `md`, và `sm` để xác định kích thước trên các loại màn hình.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Form (`<Form.Item>`):**
+   - `<Form.Item>`: Có thể sử dụng `xxl`, `xl`, `lg`, `md`, và `sm` để xác định chiều rộng của label và input trên các loại màn hình.
 
-### `npm test`
+Lưu ý rằng trong nhiều trường hợp, các thuộc tính này có thể được sử dụng để xác định chiều rộng hoặc số cột tùy thuộc vào ngữ cảnh sử dụng của từng component. Hãy kiểm tra tài liệu chính thức của Ant Design để biết chi tiết và sử dụng chính xác trong dự án của bạn.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Thuộc tính `span` thường được sử dụng chủ yếu trong thẻ `<Col>` của hệ thống lưới (`<Row>` và `<Col>`) trong Ant Design. Dưới đây là danh sách các thẻ và components mà bạn thường sử dụng thuộc tính `span`:
 
-### `npm run build`
+1. **Grid System (`<Row>` và `<Col>`):**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   - `<Col>`: Thuộc tính `span` được sử dụng để xác định số cột mà một `<Col>` sẽ chiếm trong một hàng `<Row>`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```jsx
+   import { Row, Col } from "antd";
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   const MyComponent = () => {
+     return (
+       <Row>
+         <Col span={6}>{/* Nội dung chiếm 6/24 cột (1/4) của một hàng */}</Col>
+         <Col span={12}>
+           {/* Nội dung chiếm 12/24 cột (1/2) của một hàng */}
+         </Col>
+         <Col span={6}>{/* Nội dung chiếm 6/24 cột (1/4) của một hàng */}</Col>
+       </Row>
+     );
+   };
+   ```
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Như đã đề cập trước đó, các components khác trong Ant Design thường không sử dụng trực tiếp thuộc tính `span`. Thay vào đó, chúng có thể sử dụng các thuộc tính khác phù hợp với mục đích sử dụng của chúng, như `style`, `className`, hoặc các thuộc tính liên quan đến layout và kiểu dáng.
