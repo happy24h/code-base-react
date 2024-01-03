@@ -1,8 +1,15 @@
-- `xxl`: Màn hình có độ rộng lớn hơn 1600px.
-- `xl`: Màn hình có độ rộng từ 1200px đến 1600px.
-- `lg`: Màn hình có độ rộng từ 1000px đến 1200px.
-- `md`: Màn hình có độ rộng từ 765px đến 1000px.
-- `sm`: Màn hình có độ rộng nhỏ hơn 765px.
+xxl: Màn hình có độ rộng lớn hơn 1600px.
+xl: Màn hình có độ rộng từ 1200px đến 1600px.
+lg: Màn hình có độ rộng từ 992px đến 1200px.
+md: Màn hình có độ rộng từ 768px đến 992px.
+sm: Màn hình có độ rộng nhỏ hơn 576px.
+
+xs: Màn hình có độ rộng nhỏ hơn hoặc bằng 480px.
+sm: Màn hình có độ rộng từ 576px đến dưới 768px.
+md: Màn hình có độ rộng từ 768px đến dưới 992px.
+lg: Màn hình có độ rộng từ 992px đến dưới 1200px.
+xl: Màn hình có độ rộng từ 1200px đến dưới 1600px.
+xxl: Màn hình có độ rộng từ 1600px trở lên.
 
 Dưới đây là tóm tắt danh sách các thẻ và components trong Ant Design sử dụng được các thuộc tính `xxl`, `xl`, `lg`, `md`, và `sm`:
 
